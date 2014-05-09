@@ -8,8 +8,10 @@
 		var query = location.search.substr(1);
 		var params = parseQueryToJson(query);
 
-		if(params.token){
-			alert(params.token)
+		//parent.gotCode("params.code");
+
+		if(params.code){
+			window.opener.gotCode(params.code);
 		}
 		else{
 			window.location = github_oauth_url;

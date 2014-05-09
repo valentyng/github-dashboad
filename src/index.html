@@ -1,11 +1,21 @@
 <html> 
 <head>
 <title>Github Dashboard</title>
+<script type="text/javascript" src="scripts/index.js"></script>
 </head>
 <body>
 	<h1>Github Dashboard</h1>
 	<div>
-		<a href="login.html" target="_blank">login</a>
+		<a href="#" onclick="openLogin(); return false;" >login</a>
 	</div>
+<script type="text/javascript">
+	function gotCode (code) {
+		document.write(code);
+		if(childLogin != null){
+			childLogin.close();
+		}
+	}
+</script>
+	
 </body>
 </html>
